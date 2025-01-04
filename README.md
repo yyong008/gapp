@@ -31,3 +31,11 @@ gapp 是一个 go gin 的单体 web 项目项目。
 ```sh
 swag init -g ./cmd/server/main.go
 ```
+
+## docker build
+
+```sh
+docker buildx build -t gapp:v1 .
+docker buildx build -t gapp:v1.1 . > build.log 2>&1 # 指定构建信息到输出到文件
+docker build -t gapp:v1 .
+```
