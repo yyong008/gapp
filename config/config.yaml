@@ -1,0 +1,17 @@
+server:
+  port: 3000
+
+database:
+  type: "sqlite" # 支持 sqlite, postgres, mysql
+  host: "localhost"
+  port: "5432"
+  user: "your_user"
+  password: "your_password"
+  name: "your_db"
+  sslmode: "disable" # PostgreSQL 专用
+  filepath: "./storage/test.db" # SQLite 专用
+
+jwt:
+  secret_key: "your_secret_key"  # 密钥（应存储在安全地方）
+  issuer: "your_app_name"       # 应用名称
+  expiration: 86400             # 过期时间（单位秒，86400秒 = 24小时）
